@@ -375,7 +375,7 @@ UnaryExp -> PrimaryExp, PrimaryExp -> INTEGER, ]
 |$LVariable \rightarrow \textbf{LID}$|$LVariable = \textbf{LID}.val$|
 |$Exp \rightarrow {Exp}_1 \; \| \; AndExp$|$Exp = {Exp}_1.val \; \| \; AndExp.val$|
 |$Exp \rightarrow AndExp$|$Exp.val = AndExp.val$|
-|$AndExp \rightarrow {AndExp}_1 \; \&\& \; XorExp$ |$AndExp.val={AndExp}_1.val \; \&\& \; XorExp.val$ |
+|$AndExp \rightarrow {AndExp}_1  \And \And  XorExp$ |$AndExp.val={AndExp}_1.val \And \And XorExp.val$ |
 |$AndExp \rightarrow XorExp $|$AndExp.val = XorExp.val $|
 |$XorExp \rightarrow {XorExp}_1 \land EqExp$|$XorExp.val = {XorExp}_1.val \land EqExp.val$|
 |$XorExp \rightarrow EqExp$|$XorExp.val = EqExp.val$|
@@ -736,7 +736,7 @@ Last token type not END
 
 ![weixin](images/2023-01-09-21-42-38.png)
 
-> 本是后山人，偶做前堂客。醉舞经阁半卷书，坐井说天阔。
+> 本是后山人，偶做前堂客。醉舞经阁半卷书，坐井说天阔。  
 > 大志戏功名，海斗量福祸。论到囊中羞涩时，怒指乾坤错。
 
 ## 参考
